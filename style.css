@@ -1,0 +1,46 @@
+.controle-form {
+    margin: 10px;
+}
+
+/* Estilizando botões */
+button {
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px #555;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: all .3s;
+
+    cursor: pointer;
+}
+/* Selecionando pelo atributo da tag */
+button[type="submit"] {
+    background-color: #58EEAD;
+}
+button[type="reset"] {
+    background-color: #ee5858;
+}
+/*seletor :hover */
+button[type="submit"]:hover {
+    background-color: #3fa87b;
+}
+button[type="reset"]:hover,
+button[type="focus"] {
+    background-color: #ad4040;
+    transition: all .3s;
+}
+/* seletor :active */
+button[type="submit"]:active {
+    box-shadow: inset 2px 2px 5px #58EEAD;
+}
+button[type="reset"]:active {
+    box-shadow: inset 2px 2px 5px #ee5858;
+}
+/* seletor :disabled */
+button:disabled, 
+button:disabled:hover {
+    box-shadow: none;
+    background-color: #ccc;
+    cursor:not-allowed;
+}

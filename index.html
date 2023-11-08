@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <form action="">
+        <div class="controle-form">
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" value="222444555" disabled>
+        </div>
+        <div class="controle-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" autofocus>
+        </div>
+        <div class="controle-form">
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" value="11333445555" readonly>
+        </div>
+        <div class="controle-form">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required autocomplete="name">
+        </div>
+        <div class="controle-form">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="0" max="100" value="38">
+        </div>
+        <div class="controle-form">
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" min="0" max="2.50" step="0.01" value="" placeholder="Ex.: 1.69">
+        </div>
+        <div class="controle-form">
+            <label for="peso">Peso:</label>
+            <input type="number" id="peso" min="0" max="595" step="0.5" placeholder="Ex.: 78">
+        </div>
+
+        <div class="controle-form">
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento">
+        </div>
+        <div class="controle-form">
+            <label for="dataCadastro">Data de Cadastro:</label>
+            <input type="date" id="dataCadastro">
+        </div>
+        <div class="controle-form">
+            <label for="horaCadastro">Hora de Cadastro:</label>
+            <input type="time" id="horaCadastro">
+        </div>
+        <div class="controle-form">
+            <label for="novaSenha">Nova senha:</label>
+            <input type="password" id="novaSenha">
+        </div>
+        <div class="controle-form">
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" id="arquivo">
+        </div>
+        <div class="controle-form">
+            <label for="cor">Cor preferida:</label>
+            <input type="color" id="cor">
+        </div>
+        <div class="controle-form">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+            <button type="submit" disabled>Desabilitado</button>
+        </div>
+        
+        <input type="hidden" id="chaveSecreta" value="3yuh76yq23a78yu32ha789weui23d8ui">
+        <!-- <input type="submit" value="Enviar"> -->
+        <input type="image" id="imagem" alt="Imagem do form" src="./654249.png" width="80px" height="80px">
+    </form>
+</body>
+</html>
